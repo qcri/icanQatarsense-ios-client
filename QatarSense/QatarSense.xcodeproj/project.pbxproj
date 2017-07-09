@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		411B46561C6FB305002B6D51 /* BarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B463E1C6FB305002B6D51 /* BarChartView.m */; };
+		411B46571C6FB305002B6D51 /* BarLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B46401C6FB305002B6D51 /* BarLabel.m */; };
+		411B46581C6FB305002B6D51 /* BarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B46431C6FB305002B6D51 /* BarView.m */; };
+		411B46591C6FB305002B6D51 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B46471C6FB305002B6D51 /* CMPopTipView.m */; };
+		411B465A1C6FB305002B6D51 /* UIColor+i7HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B464A1C6FB305002B6D51 /* UIColor+i7HexColor.m */; };
+		411B465B1C6FB305002B6D51 /* UIViewSizeShortcuts.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B464C1C6FB305002B6D51 /* UIViewSizeShortcuts.m */; };
+		411B465C1C6FB305002B6D51 /* XMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B464F1C6FB305002B6D51 /* XMLElement.m */; };
+		411B465D1C6FB305002B6D51 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B46511C6FB305002B6D51 /* XMLParser.m */; };
+		411B465E1C6FB305002B6D51 /* XMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B46531C6FB305002B6D51 /* XMLParserDelegate.m */; };
+		411B465F1C6FB305002B6D51 /* PlotChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B46551C6FB305002B6D51 /* PlotChartView.m */; };
+		413402D31C6DCBE7002E6A1E /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 413402D21C6DCBE7002E6A1E /* Activity.m */; };
+		4149E1531C7F0CD700B8261E /* SensorActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4149E1521C7F0CD700B8261E /* SensorActivity.m */; };
+		414A33A61C71F780007E2CC1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414A33A51C71F780007E2CC1 /* QuartzCore.framework */; };
+		414A33A91C71F8B9007E2CC1 /* UIView+BorderStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 414A33A81C71F8B9007E2CC1 /* UIView+BorderStuff.m */; };
+		414A33AD1C720813007E2CC1 /* LeaderboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 414A33AC1C720813007E2CC1 /* LeaderboardCell.m */; };
+		414A33B01C730902007E2CC1 /* LeaderboardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 414A33AF1C730902007E2CC1 /* LeaderboardItem.m */; };
+		415DDB081C61E96C00CAA396 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDB071C61E96C00CAA396 /* main.m */; };
+		415DDB0B1C61E96C00CAA396 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDB0A1C61E96C00CAA396 /* AppDelegate.m */; };
+		415DDB111C61E96C00CAA396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415DDB0F1C61E96C00CAA396 /* Main.storyboard */; };
+		415DDB141C61E96C00CAA396 /* QatarSense.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 415DDB121C61E96C00CAA396 /* QatarSense.xcdatamodeld */; };
+		415DDB161C61E96C00CAA396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415DDB151C61E96C00CAA396 /* Assets.xcassets */; };
+		415DDB241C61E96D00CAA396 /* QatarSenseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDB231C61E96D00CAA396 /* QatarSenseTests.m */; };
+		415DDB2F1C61E96D00CAA396 /* QatarSenseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDB2E1C61E96D00CAA396 /* QatarSenseUITests.m */; };
+		415DDB471C62050000CAA396 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415DDB461C62050000CAA396 /* LoginViewController.m */; };
+		415DDBD11C62090700CAA396 /* OPENSANS-LIGHTITALIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 415DDBCF1C62090700CAA396 /* OPENSANS-LIGHTITALIC.TTF */; };
+		415DDBF21C62091200CAA396 /* Background-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 415DDBD31C62091200CAA396 /* Background-568h@2x.png */; };
+		415DDBF31C62091200CAA396 /* Background-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 415DDBD41C62091200CAA396 /* Background-667h@2x.png */; };
+		415DDC121C620C7A00CAA396 /* PROTOTYPE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 415DDC111C620C7A00CAA396 /* PROTOTYPE.TTF */; };
+		416C12AE1C77459B00220DD6 /* Sensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 416C12AD1C77459B00220DD6 /* Sensor.m */; };
+		416D93031C62736E00817A87 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D93021C62736E00817A87 /* AppConfig.m */; };
+		416D93071C635B2400817A87 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D93061C635B2400817A87 /* SWRevealViewController.m */; };
+		416D930A1C63661100817A87 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D93091C63661100817A87 /* MenuTableViewController.m */; };
+		416D930D1C63664000817A87 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D930C1C63664000817A87 /* DashboardViewController.m */; };
+		416D93101C63667600817A87 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D930F1C63667600817A87 /* HelpViewController.m */; };
+		416D93131C6366BC00817A87 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D93121C6366BC00817A87 /* SettingsViewController.m */; };
+		416D93161C6366F300817A87 /* LeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D93151C6366F300817A87 /* LeaderboardViewController.m */; };
+		416D931E1C651A0F00817A87 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D931D1C651A0F00817A87 /* MBProgressHUD.m */; };
+		416D93231C65FD1B00817A87 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 416D93221C65FD1B00817A87 /* ContainerViewController.m */; };
+		418D11CF1C86046000CACC5B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418D11CE1C86046000CACC5B /* Security.framework */; };
+		419517C71C7CCF470039F4CD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419517C61C7CCF470039F4CD /* HealthKit.framework */; };
+		41A480321C6F8BD1007DD3D2 /* PieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A480311C6F8BD1007DD3D2 /* PieChartView.m */; };
+		41AD33501C8ED79E00B24808 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AD334F1C8ED79E00B24808 /* Reachability.m */; };
+		41B79A0E1C6871060087D77E /* HelperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B79A0D1C6871060087D77E /* HelperClass.m */; };
+		41B79A121C69C8A00087D77E /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B79A111C69C8A00087D77E /* UserInfo.m */; };
+		41B79A151C69EE560087D77E /* NSURLConnectionWithId.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B79A141C69EE560087D77E /* NSURLConnectionWithId.m */; };
+		41D915181C7DB51B00FB8E25 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D915171C7DB51B00FB8E25 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		41D9151B1C7DC4EC00FB8E25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D9151A1C7DC4EC00FB8E25 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		415DDB201C61E96D00CAA396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 415DDAFB1C61E96C00CAA396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415DDB021C61E96C00CAA396;
+			remoteInfo = QatarSense;
+		};
+		415DDB2B1C61E96D00CAA396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 415DDAFB1C61E96C00CAA396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415DDB021C61E96C00CAA396;
+			remoteInfo = QatarSense;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		411B463D1C6FB305002B6D51 /* BarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChartView.h; sourceTree = "<group>"; };
+		411B463E1C6FB305002B6D51 /* BarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartView.m; sourceTree = "<group>"; };
+		411B463F1C6FB305002B6D51 /* BarLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarLabel.h; sourceTree = "<group>"; };
+		411B46401C6FB305002B6D51 /* BarLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarLabel.m; sourceTree = "<group>"; };
+		411B46411C6FB305002B6D51 /* BarTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarTypes.h; sourceTree = "<group>"; };
+		411B46421C6FB305002B6D51 /* BarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarView.h; sourceTree = "<group>"; };
+		411B46431C6FB305002B6D51 /* BarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarView.m; sourceTree = "<group>"; };
+		411B46461C6FB305002B6D51 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		411B46471C6FB305002B6D51 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
+		411B46491C6FB305002B6D51 /* UIColor+i7HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+i7HexColor.h"; sourceTree = "<group>"; };
+		411B464A1C6FB305002B6D51 /* UIColor+i7HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+i7HexColor.m"; sourceTree = "<group>"; };
+		411B464B1C6FB305002B6D51 /* UIViewSizeShortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewSizeShortcuts.h; sourceTree = "<group>"; };
+		411B464C1C6FB305002B6D51 /* UIViewSizeShortcuts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewSizeShortcuts.m; sourceTree = "<group>"; };
+		411B464E1C6FB305002B6D51 /* XMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLElement.h; sourceTree = "<group>"; };
+		411B464F1C6FB305002B6D51 /* XMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLElement.m; sourceTree = "<group>"; };
+		411B46501C6FB305002B6D51 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		411B46511C6FB305002B6D51 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		411B46521C6FB305002B6D51 /* XMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParserDelegate.h; sourceTree = "<group>"; };
+		411B46531C6FB305002B6D51 /* XMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParserDelegate.m; sourceTree = "<group>"; };
+		411B46541C6FB305002B6D51 /* PlotChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotChartView.h; sourceTree = "<group>"; };
+		411B46551C6FB305002B6D51 /* PlotChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotChartView.m; sourceTree = "<group>"; };
+		413402D11C6DCBE7002E6A1E /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		413402D21C6DCBE7002E6A1E /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		4149E1511C7F0CD700B8261E /* SensorActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorActivity.h; sourceTree = "<group>"; };
+		4149E1521C7F0CD700B8261E /* SensorActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorActivity.m; sourceTree = "<group>"; };
+		414A33A51C71F780007E2CC1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		414A33A71C71F8B9007E2CC1 /* UIView+BorderStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BorderStuff.h"; sourceTree = "<group>"; };
+		414A33A81C71F8B9007E2CC1 /* UIView+BorderStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BorderStuff.m"; sourceTree = "<group>"; };
+		414A33AB1C720813007E2CC1 /* LeaderboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardCell.h; sourceTree = "<group>"; };
+		414A33AC1C720813007E2CC1 /* LeaderboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardCell.m; sourceTree = "<group>"; };
+		414A33AE1C730902007E2CC1 /* LeaderboardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardItem.h; sourceTree = "<group>"; };
+		414A33AF1C730902007E2CC1 /* LeaderboardItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardItem.m; sourceTree = "<group>"; };
+		415DDB031C61E96C00CAA396 /* QatarSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QatarSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		415DDB071C61E96C00CAA396 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		415DDB091C61E96C00CAA396 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		415DDB0A1C61E96C00CAA396 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		415DDB101C61E96C00CAA396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		415DDB131C61E96C00CAA396 /* QatarSense.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QatarSense.xcdatamodel; sourceTree = "<group>"; };
+		415DDB151C61E96C00CAA396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		415DDB1A1C61E96C00CAA396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415DDB1F1C61E96D00CAA396 /* QatarSenseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QatarSenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		415DDB231C61E96D00CAA396 /* QatarSenseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QatarSenseTests.m; sourceTree = "<group>"; };
+		415DDB251C61E96D00CAA396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415DDB2A1C61E96D00CAA396 /* QatarSenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QatarSenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		415DDB2E1C61E96D00CAA396 /* QatarSenseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QatarSenseUITests.m; sourceTree = "<group>"; };
+		415DDB301C61E96D00CAA396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415DDB3C1C61E97D00CAA396 /* QatarSense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QatarSense.entitlements; sourceTree = "<group>"; };
+		415DDB451C62050000CAA396 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		415DDB461C62050000CAA396 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		415DDBCF1C62090700CAA396 /* OPENSANS-LIGHTITALIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OPENSANS-LIGHTITALIC.TTF"; path = "Resources/Fonts/OPENSANS-LIGHTITALIC.TTF"; sourceTree = "<group>"; };
+		415DDBD31C62091200CAA396 /* Background-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background-568h@2x.png"; path = "Resources/Images/Background-568h@2x.png"; sourceTree = "<group>"; };
+		415DDBD41C62091200CAA396 /* Background-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background-667h@2x.png"; path = "Resources/Images/Background-667h@2x.png"; sourceTree = "<group>"; };
+		415DDC111C620C7A00CAA396 /* PROTOTYPE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = PROTOTYPE.TTF; path = Resources/Fonts/PROTOTYPE.TTF; sourceTree = "<group>"; };
+		416C12AC1C77459B00220DD6 /* Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensor.h; sourceTree = "<group>"; };
+		416C12AD1C77459B00220DD6 /* Sensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensor.m; sourceTree = "<group>"; };
+		416D93011C62736E00817A87 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		416D93021C62736E00817A87 /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		416D93051C635B2400817A87 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		416D93061C635B2400817A87 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		416D93081C63661100817A87 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		416D93091C63661100817A87 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		416D930B1C63664000817A87 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		416D930C1C63664000817A87 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		416D930E1C63667600817A87 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		416D930F1C63667600817A87 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		416D93111C6366BC00817A87 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		416D93121C6366BC00817A87 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		416D93141C6366F300817A87 /* LeaderboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardViewController.h; sourceTree = "<group>"; };
+		416D93151C6366F300817A87 /* LeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardViewController.m; sourceTree = "<group>"; };
+		416D931C1C651A0F00817A87 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		416D931D1C651A0F00817A87 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		416D93211C65FD1B00817A87 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		416D93221C65FD1B00817A87 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		418D11CE1C86046000CACC5B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		419517C61C7CCF470039F4CD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		41A480301C6F8BD1007DD3D2 /* PieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PieChartView.h; path = PieChart/PieChartView.h; sourceTree = "<group>"; };
+		41A480311C6F8BD1007DD3D2 /* PieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PieChartView.m; path = PieChart/PieChartView.m; sourceTree = "<group>"; };
+		41AD334E1C8ED79E00B24808 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = "<group>"; };
+		41AD334F1C8ED79E00B24808 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = "<group>"; };
+		41B79A0C1C6871060087D77E /* HelperClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperClass.h; sourceTree = "<group>"; };
+		41B79A0D1C6871060087D77E /* HelperClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperClass.m; sourceTree = "<group>"; };
+		41B79A101C69C8A00087D77E /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		41B79A111C69C8A00087D77E /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		41B79A131C69EE560087D77E /* NSURLConnectionWithId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionWithId.h; sourceTree = "<group>"; };
+		41B79A141C69EE560087D77E /* NSURLConnectionWithId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionWithId.m; sourceTree = "<group>"; };
+		41D915161C7DB51B00FB8E25 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		41D915171C7DB51B00FB8E25 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		41D9151A1C7DC4EC00FB8E25 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		415DDB001C61E96C00CAA396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418D11CF1C86046000CACC5B /* Security.framework in Frameworks */,
+				41D9151B1C7DC4EC00FB8E25 /* CoreLocation.framework in Frameworks */,
+				419517C71C7CCF470039F4CD /* HealthKit.framework in Frameworks */,
+				414A33A61C71F780007E2CC1 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415DDB1C1C61E96D00CAA396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415DDB271C61E96D00CAA396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		411B463C1C6FB305002B6D51 /* BarChart Library */ = {
+			isa = PBXGroup;
+			children = (
+				411B463D1C6FB305002B6D51 /* BarChartView.h */,
+				411B463E1C6FB305002B6D51 /* BarChartView.m */,
+				411B463F1C6FB305002B6D51 /* BarLabel.h */,
+				411B46401C6FB305002B6D51 /* BarLabel.m */,
+				411B46411C6FB305002B6D51 /* BarTypes.h */,
+				411B46421C6FB305002B6D51 /* BarView.h */,
+				411B46431C6FB305002B6D51 /* BarView.m */,
+				411B46441C6FB305002B6D51 /* External */,
+				411B46541C6FB305002B6D51 /* PlotChartView.h */,
+				411B46551C6FB305002B6D51 /* PlotChartView.m */,
+			);
+			path = "BarChart Library";
+			sourceTree = "<group>";
+		};
+		411B46441C6FB305002B6D51 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				411B46451C6FB305002B6D51 /* CMPopTipView */,
+				411B46481C6FB305002B6D51 /* Helpers */,
+				411B464D1C6FB305002B6D51 /* XMLParser */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		411B46451C6FB305002B6D51 /* CMPopTipView */ = {
+			isa = PBXGroup;
+			children = (
+				411B46461C6FB305002B6D51 /* CMPopTipView.h */,
+				411B46471C6FB305002B6D51 /* CMPopTipView.m */,
+			);
+			path = CMPopTipView;
+			sourceTree = "<group>";
+		};
+		411B46481C6FB305002B6D51 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				411B46491C6FB305002B6D51 /* UIColor+i7HexColor.h */,
+				411B464A1C6FB305002B6D51 /* UIColor+i7HexColor.m */,
+				411B464B1C6FB305002B6D51 /* UIViewSizeShortcuts.h */,
+				411B464C1C6FB305002B6D51 /* UIViewSizeShortcuts.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		411B464D1C6FB305002B6D51 /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				411B464E1C6FB305002B6D51 /* XMLElement.h */,
+				411B464F1C6FB305002B6D51 /* XMLElement.m */,
+				411B46501C6FB305002B6D51 /* XMLParser.h */,
+				411B46511C6FB305002B6D51 /* XMLParser.m */,
+				411B46521C6FB305002B6D51 /* XMLParserDelegate.h */,
+				411B46531C6FB305002B6D51 /* XMLParserDelegate.m */,
+			);
+			path = XMLParser;
+			sourceTree = "<group>";
+		};
+		414A33A11C71F5FD007E2CC1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				414A33A71C71F8B9007E2CC1 /* UIView+BorderStuff.h */,
+				414A33A81C71F8B9007E2CC1 /* UIView+BorderStuff.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		415DDAFA1C61E96C00CAA396 = {
+			isa = PBXGroup;
+			children = (
+				418D11CE1C86046000CACC5B /* Security.framework */,
+				41D9151A1C7DC4EC00FB8E25 /* CoreLocation.framework */,
+				419517C61C7CCF470039F4CD /* HealthKit.framework */,
+				414A33A51C71F780007E2CC1 /* QuartzCore.framework */,
+				415DDB051C61E96C00CAA396 /* QatarSense */,
+				415DDB221C61E96D00CAA396 /* QatarSenseTests */,
+				415DDB2D1C61E96D00CAA396 /* QatarSenseUITests */,
+				415DDB041C61E96C00CAA396 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		415DDB041C61E96C00CAA396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				415DDB031C61E96C00CAA396 /* QatarSense.app */,
+				415DDB1F1C61E96D00CAA396 /* QatarSenseTests.xctest */,
+				415DDB2A1C61E96D00CAA396 /* QatarSenseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		415DDB051C61E96C00CAA396 /* QatarSense */ = {
+			isa = PBXGroup;
+			children = (
+				41D915191C7DB53A00FB8E25 /* KeyChain */,
+				414A33A11C71F5FD007E2CC1 /* Categories */,
+				41AF62CF1C6F1792009F246E /* Charts */,
+				41B79A161C69FA880087D77E /* Reachability */,
+				41B79A0F1C69C8880087D77E /* Models */,
+				416D931B1C6519EE00817A87 /* MBProgressHUD */,
+				416D93171C64957100817A87 /* CustomCells */,
+				416D93041C635AFF00817A87 /* SWRevealViewController */,
+				415DDB3C1C61E97D00CAA396 /* QatarSense.entitlements */,
+				415DDB091C61E96C00CAA396 /* AppDelegate.h */,
+				415DDB0A1C61E96C00CAA396 /* AppDelegate.m */,
+				415DDB0F1C61E96C00CAA396 /* Main.storyboard */,
+				415DDB151C61E96C00CAA396 /* Assets.xcassets */,
+				415DDB1A1C61E96C00CAA396 /* Info.plist */,
+				415DDB121C61E96C00CAA396 /* QatarSense.xcdatamodeld */,
+				415DDB3F1C61F6E700CAA396 /* Resources */,
+				415DDB061C61E96C00CAA396 /* Supporting Files */,
+				415DDB451C62050000CAA396 /* LoginViewController.h */,
+				415DDB461C62050000CAA396 /* LoginViewController.m */,
+				416D93011C62736E00817A87 /* AppConfig.h */,
+				416D93021C62736E00817A87 /* AppConfig.m */,
+				416D93081C63661100817A87 /* MenuTableViewController.h */,
+				416D93091C63661100817A87 /* MenuTableViewController.m */,
+				416D930B1C63664000817A87 /* DashboardViewController.h */,
+				416D930C1C63664000817A87 /* DashboardViewController.m */,
+				416D930E1C63667600817A87 /* HelpViewController.h */,
+				416D930F1C63667600817A87 /* HelpViewController.m */,
+				416D93111C6366BC00817A87 /* SettingsViewController.h */,
+				416D93121C6366BC00817A87 /* SettingsViewController.m */,
+				416D93141C6366F300817A87 /* LeaderboardViewController.h */,
+				416D93151C6366F300817A87 /* LeaderboardViewController.m */,
+				416D93211C65FD1B00817A87 /* ContainerViewController.h */,
+				416D93221C65FD1B00817A87 /* ContainerViewController.m */,
+				41B79A0C1C6871060087D77E /* HelperClass.h */,
+				41B79A0D1C6871060087D77E /* HelperClass.m */,
+				41B79A131C69EE560087D77E /* NSURLConnectionWithId.h */,
+				41B79A141C69EE560087D77E /* NSURLConnectionWithId.m */,
+				416C12AC1C77459B00220DD6 /* Sensor.h */,
+				416C12AD1C77459B00220DD6 /* Sensor.m */,
+			);
+			path = QatarSense;
+			sourceTree = "<group>";
+		};
+		415DDB061C61E96C00CAA396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				415DDB071C61E96C00CAA396 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		415DDB221C61E96D00CAA396 /* QatarSenseTests */ = {
+			isa = PBXGroup;
+			children = (
+				415DDB231C61E96D00CAA396 /* QatarSenseTests.m */,
+				415DDB251C61E96D00CAA396 /* Info.plist */,
+			);
+			path = QatarSenseTests;
+			sourceTree = "<group>";
+		};
+		415DDB2D1C61E96D00CAA396 /* QatarSenseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				415DDB2E1C61E96D00CAA396 /* QatarSenseUITests.m */,
+				415DDB301C61E96D00CAA396 /* Info.plist */,
+			);
+			path = QatarSenseUITests;
+			sourceTree = "<group>";
+		};
+		415DDB3F1C61F6E700CAA396 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				415DDBCE1C6208FA00CAA396 /* Fonts */,
+				415DDBCD1C6208F100CAA396 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		415DDBCD1C6208F100CAA396 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				415DDBD31C62091200CAA396 /* Background-568h@2x.png */,
+				415DDBD41C62091200CAA396 /* Background-667h@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		415DDBCE1C6208FA00CAA396 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				415DDC111C620C7A00CAA396 /* PROTOTYPE.TTF */,
+				415DDBCF1C62090700CAA396 /* OPENSANS-LIGHTITALIC.TTF */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		416D93041C635AFF00817A87 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				416D93051C635B2400817A87 /* SWRevealViewController.h */,
+				416D93061C635B2400817A87 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		416D93171C64957100817A87 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				414A33AB1C720813007E2CC1 /* LeaderboardCell.h */,
+				414A33AC1C720813007E2CC1 /* LeaderboardCell.m */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		416D931B1C6519EE00817A87 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				416D931C1C651A0F00817A87 /* MBProgressHUD.h */,
+				416D931D1C651A0F00817A87 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		41A4802E1C6F8BAE007DD3D2 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				41A480301C6F8BD1007DD3D2 /* PieChartView.h */,
+				41A480311C6F8BD1007DD3D2 /* PieChartView.m */,
+			);
+			name = PieChart;
+			sourceTree = "<group>";
+		};
+		41AF62CF1C6F1792009F246E /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				411B463C1C6FB305002B6D51 /* BarChart Library */,
+				41A4802E1C6F8BAE007DD3D2 /* PieChart */,
+			);
+			name = Charts;
+			sourceTree = "<group>";
+		};
+		41B79A0F1C69C8880087D77E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41B79A101C69C8A00087D77E /* UserInfo.h */,
+				41B79A111C69C8A00087D77E /* UserInfo.m */,
+				413402D11C6DCBE7002E6A1E /* Activity.h */,
+				413402D21C6DCBE7002E6A1E /* Activity.m */,
+				414A33AE1C730902007E2CC1 /* LeaderboardItem.h */,
+				414A33AF1C730902007E2CC1 /* LeaderboardItem.m */,
+				4149E1511C7F0CD700B8261E /* SensorActivity.h */,
+				4149E1521C7F0CD700B8261E /* SensorActivity.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		41B79A161C69FA880087D77E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				41AD334E1C8ED79E00B24808 /* Reachability.h */,
+				41AD334F1C8ED79E00B24808 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		41D915191C7DB53A00FB8E25 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				41D915161C7DB51B00FB8E25 /* KeychainItemWrapper.h */,
+				41D915171C7DB51B00FB8E25 /* KeychainItemWrapper.m */,
+			);
+			name = KeyChain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		415DDB021C61E96C00CAA396 /* QatarSense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415DDB331C61E96D00CAA396 /* Build configuration list for PBXNativeTarget "QatarSense" */;
+			buildPhases = (
+				415DDAFF1C61E96C00CAA396 /* Sources */,
+				415DDB001C61E96C00CAA396 /* Frameworks */,
+				415DDB011C61E96C00CAA396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QatarSense;
+			productName = QatarSense;
+			productReference = 415DDB031C61E96C00CAA396 /* QatarSense.app */;
+			productType = "com.apple.product-type.application";
+		};
+		415DDB1E1C61E96D00CAA396 /* QatarSenseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415DDB361C61E96D00CAA396 /* Build configuration list for PBXNativeTarget "QatarSenseTests" */;
+			buildPhases = (
+				415DDB1B1C61E96D00CAA396 /* Sources */,
+				415DDB1C1C61E96D00CAA396 /* Frameworks */,
+				415DDB1D1C61E96D00CAA396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				415DDB211C61E96D00CAA396 /* PBXTargetDependency */,
+			);
+			name = QatarSenseTests;
+			productName = QatarSenseTests;
+			productReference = 415DDB1F1C61E96D00CAA396 /* QatarSenseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		415DDB291C61E96D00CAA396 /* QatarSenseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415DDB391C61E96D00CAA396 /* Build configuration list for PBXNativeTarget "QatarSenseUITests" */;
+			buildPhases = (
+				415DDB261C61E96D00CAA396 /* Sources */,
+				415DDB271C61E96D00CAA396 /* Frameworks */,
+				415DDB281C61E96D00CAA396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				415DDB2C1C61E96D00CAA396 /* PBXTargetDependency */,
+			);
+			name = QatarSenseUITests;
+			productName = QatarSenseUITests;
+			productReference = 415DDB2A1C61E96D00CAA396 /* QatarSenseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		415DDAFB1C61E96C00CAA396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = qcri;
+				TargetAttributes = {
+					415DDB021C61E96C00CAA396 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5HLEBP7UH2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					415DDB1E1C61E96D00CAA396 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 415DDB021C61E96C00CAA396;
+					};
+					415DDB291C61E96D00CAA396 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 415DDB021C61E96C00CAA396;
+					};
+				};
+			};
+			buildConfigurationList = 415DDAFE1C61E96C00CAA396 /* Build configuration list for PBXProject "QatarSense" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 415DDAFA1C61E96C00CAA396;
+			productRefGroup = 415DDB041C61E96C00CAA396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				415DDB021C61E96C00CAA396 /* QatarSense */,
+				415DDB1E1C61E96D00CAA396 /* QatarSenseTests */,
+				415DDB291C61E96D00CAA396 /* QatarSenseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		415DDB011C61E96C00CAA396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415DDB161C61E96C00CAA396 /* Assets.xcassets in Resources */,
+				415DDB111C61E96C00CAA396 /* Main.storyboard in Resources */,
+				415DDC121C620C7A00CAA396 /* PROTOTYPE.TTF in Resources */,
+				415DDBF21C62091200CAA396 /* Background-568h@2x.png in Resources */,
+				415DDBF31C62091200CAA396 /* Background-667h@2x.png in Resources */,
+				415DDBD11C62090700CAA396 /* OPENSANS-LIGHTITALIC.TTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415DDB1D1C61E96D00CAA396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415DDB281C61E96D00CAA396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		415DDAFF1C61E96C00CAA396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415DDB471C62050000CAA396 /* LoginViewController.m in Sources */,
+				415DDB0B1C61E96C00CAA396 /* AppDelegate.m in Sources */,
+				416D93161C6366F300817A87 /* LeaderboardViewController.m in Sources */,
+				411B46561C6FB305002B6D51 /* BarChartView.m in Sources */,
+				415DDB141C61E96C00CAA396 /* QatarSense.xcdatamodeld in Sources */,
+				416C12AE1C77459B00220DD6 /* Sensor.m in Sources */,
+				411B465F1C6FB305002B6D51 /* PlotChartView.m in Sources */,
+				416D930D1C63664000817A87 /* DashboardViewController.m in Sources */,
+				411B465C1C6FB305002B6D51 /* XMLElement.m in Sources */,
+				416D93031C62736E00817A87 /* AppConfig.m in Sources */,
+				415DDB081C61E96C00CAA396 /* main.m in Sources */,
+				411B46581C6FB305002B6D51 /* BarView.m in Sources */,
+				414A33A91C71F8B9007E2CC1 /* UIView+BorderStuff.m in Sources */,
+				416D931E1C651A0F00817A87 /* MBProgressHUD.m in Sources */,
+				41D915181C7DB51B00FB8E25 /* KeychainItemWrapper.m in Sources */,
+				416D930A1C63661100817A87 /* MenuTableViewController.m in Sources */,
+				411B465A1C6FB305002B6D51 /* UIColor+i7HexColor.m in Sources */,
+				411B46571C6FB305002B6D51 /* BarLabel.m in Sources */,
+				414A33B01C730902007E2CC1 /* LeaderboardItem.m in Sources */,
+				416D93231C65FD1B00817A87 /* ContainerViewController.m in Sources */,
+				41B79A0E1C6871060087D77E /* HelperClass.m in Sources */,
+				411B465D1C6FB305002B6D51 /* XMLParser.m in Sources */,
+				416D93131C6366BC00817A87 /* SettingsViewController.m in Sources */,
+				416D93101C63667600817A87 /* HelpViewController.m in Sources */,
+				41AD33501C8ED79E00B24808 /* Reachability.m in Sources */,
+				41B79A121C69C8A00087D77E /* UserInfo.m in Sources */,
+				416D93071C635B2400817A87 /* SWRevealViewController.m in Sources */,
+				413402D31C6DCBE7002E6A1E /* Activity.m in Sources */,
+				411B465B1C6FB305002B6D51 /* UIViewSizeShortcuts.m in Sources */,
+				411B465E1C6FB305002B6D51 /* XMLParserDelegate.m in Sources */,
+				41B79A151C69EE560087D77E /* NSURLConnectionWithId.m in Sources */,
+				411B46591C6FB305002B6D51 /* CMPopTipView.m in Sources */,
+				41A480321C6F8BD1007DD3D2 /* PieChartView.m in Sources */,
+				414A33AD1C720813007E2CC1 /* LeaderboardCell.m in Sources */,
+				4149E1531C7F0CD700B8261E /* SensorActivity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415DDB1B1C61E96D00CAA396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415DDB241C61E96D00CAA396 /* QatarSenseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415DDB261C61E96D00CAA396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415DDB2F1C61E96D00CAA396 /* QatarSenseUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		415DDB211C61E96D00CAA396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415DDB021C61E96C00CAA396 /* QatarSense */;
+			targetProxy = 415DDB201C61E96D00CAA396 /* PBXContainerItemProxy */;
+		};
+		415DDB2C1C61E96D00CAA396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415DDB021C61E96C00CAA396 /* QatarSense */;
+			targetProxy = 415DDB2B1C61E96D00CAA396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		415DDB0F1C61E96C00CAA396 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				415DDB101C61E96C00CAA396 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		415DDB311C61E96D00CAA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		415DDB321C61E96D00CAA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		415DDB341C61E96D00CAA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = QatarSense/QatarSense.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ferda Ofli (BZKB955Q2P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ferda Ofli (BZKB955Q2P)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QatarSense/ExternalFrameworks",
+				);
+				INFOPLIST_FILE = QatarSense/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = qa.qcri.QatarSense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1973a02b-33a0-4de4-b152-c86d9e56214d";
+			};
+			name = Debug;
+		};
+		415DDB351C61E96D00CAA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = QatarSense/QatarSense.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ferda Ofli (BZKB955Q2P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ferda Ofli (BZKB955Q2P)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QatarSense/ExternalFrameworks",
+				);
+				INFOPLIST_FILE = QatarSense/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = qa.qcri.QatarSense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1973a02b-33a0-4de4-b152-c86d9e56214d";
+			};
+			name = Release;
+		};
+		415DDB371C61E96D00CAA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QatarSenseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcri.QatarSenseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QatarSense.app/QatarSense";
+			};
+			name = Debug;
+		};
+		415DDB381C61E96D00CAA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QatarSenseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcri.QatarSenseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QatarSense.app/QatarSense";
+			};
+			name = Release;
+		};
+		415DDB3A1C61E96D00CAA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QatarSenseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcri.QatarSenseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QatarSense;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		415DDB3B1C61E96D00CAA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QatarSenseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcri.QatarSenseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QatarSense;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		415DDAFE1C61E96C00CAA396 /* Build configuration list for PBXProject "QatarSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415DDB311C61E96D00CAA396 /* Debug */,
+				415DDB321C61E96D00CAA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415DDB331C61E96D00CAA396 /* Build configuration list for PBXNativeTarget "QatarSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415DDB341C61E96D00CAA396 /* Debug */,
+				415DDB351C61E96D00CAA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415DDB361C61E96D00CAA396 /* Build configuration list for PBXNativeTarget "QatarSenseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415DDB371C61E96D00CAA396 /* Debug */,
+				415DDB381C61E96D00CAA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415DDB391C61E96D00CAA396 /* Build configuration list for PBXNativeTarget "QatarSenseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415DDB3A1C61E96D00CAA396 /* Debug */,
+				415DDB3B1C61E96D00CAA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		415DDB121C61E96C00CAA396 /* QatarSense.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				415DDB131C61E96C00CAA396 /* QatarSense.xcdatamodel */,
+			);
+			currentVersion = 415DDB131C61E96C00CAA396 /* QatarSense.xcdatamodel */;
+			path = QatarSense.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 415DDAFB1C61E96C00CAA396 /* Project object */;
+}
